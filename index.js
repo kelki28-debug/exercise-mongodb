@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
 
-const PORT = require('./config');
-const db =  require('./config')
+const {PORT,db} = require('./config');
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
